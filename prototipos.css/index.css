@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.tarjeta {
+	width: 1440px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 60px 50px;
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.texto {
+	text-align: center;
+	margin-bottom: 50px;
+	max-width: 700px;
+}
+
+.inter-h1 {
+    font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 64px;
+	margin: 20px;
+}
+
+.inter-p {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 26px;
+	margin: 20px;
+}
+
+button {
+	background-color: #252525;
+	color: white;
+	padding: 14px 32px;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #000;
+}
+
+.imagenes-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.imagenes {
+	display: flex;
+	gap: 20px;
+}
+
+.imagenes img {
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 12px;
+}
