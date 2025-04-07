@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('/prototipo5/Avenir-Regular.woff2') format('woff2'),
+         url('/prototipo5/Avenir-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: "Avenir", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    padding: 4rem;
+  }
+  
+  .projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  
+  .projects h1 {
+    font-size: 88px;
+    font-weight: 800;
+    line-height: 104px;
+    letter-spacing: 0;
+    max-width: 531px;
+    text-align: left;
+    margin-top: 64px;
+    margin-bottom: 48px;
+  }
+  
+  .project-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 56px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0; 
+  }
+  
+  .project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    width: 400px;
+    height: 549px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  /* Bloque de texto (número + descripción) */
+  .project-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 4px;
+    width: 400px;
+    height: 180px;
+  }
+  
+  /* Número */
+  .project-item h2 {
+    font-family: "Avenir", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 44px;
+    color: rgba(37, 37, 37, 0.55);
+    margin: 0;
+  }
+  
+  /* Descripción */
+  .project-item p {
+    font-family: "Avenir", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    color: rgba(37, 37, 37, 0.8);
+    max-width: 400px;
+    margin: 0;
+  }
+  
+  /* Imagen */
+  .project-item img {
+    width: 400px;
+    height: 345px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+  }
+  
