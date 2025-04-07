@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Avenir', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+  }
+  
+  .layout {
+    max-width: 1100px;
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start; 
+  }
+  
+  .image-side img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .content-side {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 1rem; 
+  }
+  
+  .content-side h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .content-side p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .btn {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    width: fit-content;
+  }
+  
+  .info-block {
+    margin-top: 0.5rem;
+  }
+  
+  .info-block h2 {
+    font-size: 1.1rem;
+    color: #999;
+    margin-bottom: 0.3rem;
+  }
+  
+  .info-wrapper {
+    margin-top: 2rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  @font-face {
+    font-family: 'Avenir';
+    src: url('/prototipo4/Avenir-Regular.woff2') format('woff2'),
+         url('/prototipo4/Avenir-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }

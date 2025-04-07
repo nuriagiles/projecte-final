@@ -8,7 +8,7 @@ body {
     position: relative;
   }
 
-  /* HERO SECTION */
+ 
   .hero {
     position: absolute;
     top: 137px;
@@ -52,7 +52,6 @@ body {
     cursor: pointer;
   }
   
-  /* HERO IMAGES */
   .hero-images {
     position: absolute;
     top: 65px;
