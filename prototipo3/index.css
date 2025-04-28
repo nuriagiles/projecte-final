@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('Avenir-Regular.woff2') format('woff2'),
+       url('Avenir-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +13,19 @@
   
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
+    background-color: grey; /* <-- ahora gris claro */
     color: #1a1a1a;
     padding: 2rem;
+    font-family: 'Avenir';
+  }
+  
+  .card {
+    background-color: white; /* <-- tarjeta blanca */
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1); /* opcional, para que se vea elevada */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   
   .hero {
@@ -52,6 +69,5 @@
   .hero-image {
     width: 100%;
     height: auto;
-    border-radius: 6px;
   }
   

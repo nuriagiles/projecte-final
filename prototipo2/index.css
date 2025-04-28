@@ -1,122 +1,128 @@
-body {
-    width: 1440px;
-    height: 1272px;
-    background: #FFFFFF;
-    font-family: 'Avenir', sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-  }
+@font-face {
+  font-family: 'Avenir';
+  src: url('Avenir-Regular.woff2') format('woff2'),
+       url('Avenir-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
- 
-  .hero {
-    position: absolute;
-    top: 137px;
-    left: 64px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    width: 444px;
-    height: 473px;
-  }
-  
-  .hero-text h1 {
-    width: 444px;
-    height: 231px;
-    font-weight: 800;
-    font-size: 56px;
-    line-height: 80px;
-    color: #252525;
-  }
-  
-  .hero-text p {
-    width: 386px;
-    height: 144px;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 36px;
-    color: rgba(37, 37, 37, 0.8);
-  }
-  
-  .hero-text button {
-    width: 157px;
-    height: 50px;
-    background: #252525;
-    color: #FFFFFF;
-    font-size: 18px;
-    line-height: 18px;
-    border: none;
-    border-radius: 16px;
-    padding: 16px 32px;
-    cursor: pointer;
-  }
-  
-  .hero-images {
-    position: absolute;
-    top: 65px;
-    left: 525px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-  
-  .hero-images img {
-    width: 408px;
-    height: 480px;
-    object-fit: cover;
-    border-radius: 16px;
-  }
-  
-  .hero-images img:last-child {
-    position: absolute;
-    top: 152px;
-    left: 443px; 
-  }
-  
-  .gallery {
-    position: absolute;
-    top: 900px;
-    left: 64px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 40px;
-    width: 1316px;
-    height: 440px;
-  }
-  
-  .gallery-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    width: 412px;
-    height: 440px;
-  }
-  
-  .label,
-  .label_1,
-  .label_2 {
-    width: 368px;
-    height: 55px;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 55px;
-    color: rgba(37, 37, 37, 0.25);
-  }
-  
-  .gallery-item img {
-    width: 412px;
-    height: 381px;
-    object-fit: cover;
-    border-radius: 16px;
-  }
-  @font-face {
-    font-family: 'Avenir';
-    src: url('/prototipo2/Avenir-Regular.woff2') format('woff2'),
-         url('/prototipo2/Avenir-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-  }
+/* RESETEO GENERAL */
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Avenir';
+  background-color: grey;
+}
+
+.card {
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.text-content p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn-primary {
+  background-color: #252525;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #000;
+}
+
+.images-top {
+  display: flex;
+  gap: 20px;
+}
+
+.images-top img {
+  width: 100%;
+  max-width: 280px; /* ajusté el ancho para que no sean tan grandes */
+  height: 380px; /* altura unificada */
+  object-fit: cover;
+  border-radius: 12px;
+}
+.images-top img:first-child {
+  width: 100%;
+  max-width: 280px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.images-top img:last-child {
+  width: 100%;
+  max-width: 280px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 40px; /* <- ESTE es el truco: lo baja */
+}
+
+.card-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.gallery-number {
+  color: #bbb;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.gallery-item img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}

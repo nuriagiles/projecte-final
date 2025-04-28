@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('Avenir-Regular.woff2') format('woff2'),
+       url('Avenir-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
@@ -5,35 +12,57 @@
   }
   
   body {
-    font-family: 'Avenir', sans-serif;
-    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: gray; /* <-- ahora gris claro */
     color: #1a1a1a;
-    display: flex;
-    justify-content: center;
-    padding: 4rem;
+    padding: 2rem;
+    font-family: 'Avenir';
   }
-  
+ 
   .layout {
-    max-width: 1100px;
     display: flex;
-    gap: 4rem;
-    align-items: flex-start; 
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;     /* centra verticalmente */
+    min-height: 100vh;       /* ocupa todo el alto de la pantalla */
+    padding: 2rem;
+  }
+  .card {
+    background-color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 1rem; /* <-- agregamos separación entre imagen y texto */
+    max-width: 1000px;
+    height: auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .image-side {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
   }
   
   .image-side img {
-    width: 500px;
-    height: auto;
+    width: 100%;
+    height: 95%;
     object-fit: cover;
-    display: block;
+    justify-content: start;
   }
   
   .content-side {
-    max-width: 300px;
+    flex: 1;
+    padding: 4rem 5rem 5rem 4rem; /* top - right - bottom - left */
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    padding-top: 1rem; 
+    justify-content: start;
+    gap: 2rem;
   }
+  
+  
+  
   
   .content-side h1 {
     font-size: 2.5rem;
@@ -51,7 +80,7 @@
     background-color: #1a1a1a;
     color: white;
     padding: 0.5rem 1.2rem;
-    border-radius: 6px;
+    border-radius: 15px;
     text-decoration: none;
     width: fit-content;
   }

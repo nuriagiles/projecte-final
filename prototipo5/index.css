@@ -8,7 +8,7 @@
   
   body {
     font-family: "Avenir", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: gray; /* Fondo gris claro */
     color: #1a1a1a;
     padding: 4rem;
   }
@@ -16,11 +16,12 @@
   .projects {
     max-width: 1200px;
     margin: 0 auto;
+    background-color: white; /* Fondo blanco para la tarjeta */
+    padding: 4rem; /* Espacio interno */
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding-left: 64px;
-    padding-right: 64px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1); /* Sombra ligera para levantar la tarjeta */
   }
   
   .projects h1 {
