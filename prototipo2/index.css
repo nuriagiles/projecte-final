@@ -6,8 +6,6 @@
   font-style: normal;
 }
 
-/* RESETEO GENERAL */
-/* Reset general */
 * {
   margin: 0;
   padding: 0;
@@ -80,8 +78,8 @@ body {
 
 .images-top img {
   width: 100%;
-  max-width: 280px; /* ajusté el ancho para que no sean tan grandes */
-  height: 380px; /* altura unificada */
+  max-width: 280px; 
+  height: 380px; 
   object-fit: cover;
   border-radius: 12px;
 }
@@ -98,7 +96,7 @@ body {
   height: 380px;
   object-fit: cover;
   border-radius: 12px;
-  margin-top: 40px; /* <- ESTE es el truco: lo baja */
+  margin-top: 40px; 
 }
 
 .card-gallery {
