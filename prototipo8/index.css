@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+  display: grid;
+  place-items: center;
+  background: #f1f1f1;
+}
+
+.module-display {
+  width: 880px;
+  height: 490px;
+  padding-block: 90px 28px;
+  padding-inline: 40px;
+  background-color: #9C2004;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.graphic-side {
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background: #E5B94B;
+  position: relative;
+  translate: 0 -30px;
+  overflow: hidden;
+}
+
+.image-stack img {
+  position: absolute;
+  width: 150px;
+}
+
+.image-stack img:nth-child(1) {
+  position: ;
+  width: 150px;
+  top: -65px;
+  right: 20px;
+}
+
+.image-stack img:nth-child(2) {
+  position: absolute;
+  width: 150px;
+  bottom: -60px;
+  left: 300px;
+}
+
+.image-stack img:nth-child(3) {
+  position: absolute;
+  width: 130px;
+  top: 60px;
+  left: 40px;
+}
+
+
+.text-panel {
+  width: 320px;
+  color: white;
+  position: relative;
+  top: -50px;
+}
+
+.text-panel h2 {
+  font-size: 3.75rem;
+  margin-block-end: 10px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+}
+
+.text-panel p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.text-panel button {
+  background: #E5B94B;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 40px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
