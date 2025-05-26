@@ -14,18 +14,16 @@
       padding: 60px;
     }
 
-   .projects {
-      width: 100%;
-      max-width: none;
-      background-color: white;
-      padding: 80px 120px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  .projects {
       display: flex;
       flex-direction: column;
-      gap: 64px;
-      box-sizing: border-box;
+      align-items: flex-start; 
+      padding: 60px 60px 60px 60px;
+      background-color: white;
+      gap: 60px;
+      max-width: 1100px;
+      margin: 0 auto;
     }
-
 
     .projects h1 {
       font-size: 64px;
@@ -36,11 +34,11 @@
     }
 
     .project-grid {
-    display: flex;
-    gap: 48px;
-    justify-content: center;
-    flex-wrap: nowrap;
-  }
+      display: flex;
+      gap: 48px;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
 
     .project-item {
       flex: 1;
