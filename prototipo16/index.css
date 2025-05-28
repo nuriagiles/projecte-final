@@ -5,14 +5,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000;
+  background-color: whitesmoke;
 }
 
 .space-wrapper {
   width: 990px;
   height: 650px;
   padding: 50px;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.7);
   background: url("imagenes/img1.jpg") no-repeat right;
   background-size: contain;
   background-color: #09212C;
